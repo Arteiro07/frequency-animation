@@ -5,8 +5,8 @@ import { SinWaveSVGs } from "@/components/Waves";
 export default function Home() {
 	const [freq, setFreq] = useState("0.01");
 	const [color, setColor] = useState("#111111");
-	const [width, setWidth] = useState("3");
-	const [tension, setTension] = useState("500");
+	const [width, setWidth] = useState("4");
+	const [tension, setTension] = useState("770");
 	const [amplitude, setAmplitude] = useState("100");
 	const [mass, setMass] = useState("100");
 	const [friction, setFriction] = useState("500");

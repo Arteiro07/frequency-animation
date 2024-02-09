@@ -69,7 +69,6 @@ export const SinWaveSVGs: React.FC<SinWaveSVGProps> = ({
 			).toFixed(5);
 			points.push(`${x},${y}`);
 		}
-
 		const auxpath = `M${points.join(" ")}`;
 		setPath(auxpath);
 	}, [frequency, resolution, amplitude, count]);
