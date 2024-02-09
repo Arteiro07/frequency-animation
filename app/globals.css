@@ -3,31 +3,77 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 50, 50, 50;
+		--background-end-rgb: 50, 50, 50;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
+
+.wave {
+	color: aliceblue;
+}
+
+.wave-container {
+	/* border: red;
+	border-width: 1px;
+	border-style: solid; */
+	position: absolute;
+	right: 5%;
+	width: 40%;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	overflow: hidden;
+}
+.mouse-container {
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	right: 30%;
+	border: red;
+	border-width: 1px;
+	border-style: solid;
+	z-index: 10;
+	top: 0;
+	bottom: 0;
+	background: transparent;
+}
+/* 
+svg {
+	animation: translateY linear 10s infinite;
+}
+
+@keyframes translateY {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(-12.5%);
+	}
+	100% {
+		transform: translateY(-25%);
+	}
+} */
