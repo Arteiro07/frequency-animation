@@ -1,3 +1,5 @@
+import { FrequencyProvider } from "@/context/frequency.context";
+import { TransitionsProvider } from "@/context/transitions.context";
 import { Metadata } from "next";
 import "./globals.css";
 
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<FrequencyProvider>
+					<TransitionsProvider>{children}</TransitionsProvider>
+				</FrequencyProvider>
+			</body>
 		</html>
 	);
 }

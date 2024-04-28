@@ -37,9 +37,6 @@ body {
 }
 
 .wave-container {
-	/* border: red;
-	border-width: 1px;
-	border-style: solid; */
 	position: absolute;
 	right: 5%;
 	width: 40%;
@@ -61,19 +58,3 @@ body {
 	bottom: 0;
 	background: transparent;
 }
-/* 
-svg {
-	animation: translateY linear 10s infinite;
-}
-
-@keyframes translateY {
-	0% {
-		transform: translateY(0%);
-	}
-	50% {
-		transform: translateY(-12.5%);
-	}
-	100% {
-		transform: translateY(-25%);
-	}
-} */
